@@ -15,6 +15,10 @@ Repositório com o objetivo de registrar os conteúdos absorvidos na plataforma 
     - python manage.py help migrate - Comando para visualizar as opções disponíveis no comando migrate;
     - python manage.py shell - Comando para exibir mais informações detalhadas no terminal;
     - pip install whitenoise gunicorn;
+    - pip install django-bootstrap4;
+    - pip install PyMySQL;
+    - pip install MySQL;
+    - pip install django-stdimage;
 
 # Etapas publicação do projeto
     - Mudar o modo DEBUG para 'False';
