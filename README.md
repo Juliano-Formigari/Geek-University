@@ -2,6 +2,12 @@
 
 Repositório com o objetivo de registrar os conteúdos absorvidos na plataforma Geek University.
 
+# To see
+    - Explorar funcionalidade do SHELL, juntamente com as bibliotecas;
+        python manage.py shell
+            from django.db import models
+            dir(models)
+            help(models)
 # Comandos
     - python -m venv venv;
         Ativar o ambiente virtual com o comando: source venv/Scripts/activate;
