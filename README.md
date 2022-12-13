@@ -25,6 +25,10 @@ Repositório com o objetivo de registrar os conteúdos absorvidos na plataforma 
     - pip install PyMySQL;
     - pip install MySQL;
     - pip install django-stdimage;
+    - pip install dj_database_url - Utilizado para passar as configurações default do banco de dados para o heroku;
+    - pip install psycopg2-binary - Driver de conexão para o banco de dados;
+    - pip install dj-static
+    - pip uninstall whitenoise - Comando para remover uma biblioteca instalada;
 
 # Etapas publicação do projeto
     - Mudar o modo DEBUG para 'False';
@@ -33,7 +37,7 @@ Repositório com o objetivo de registrar os conteúdos absorvidos na plataforma 
         whitenoise: Django por padrão não gerencia arquivos estaticos em produção, então essa biblioteca tem essa função;
         gunicorn: Executa os comandos para rodar a aplicação;
     - No arquivo settings, adicionar o campo 'whitenoise.middleware.WhiteNoiseMiddleware';
-    - No arquivo settings, configurar o STATIC_ROOT;
+    - No arquivo settings, configurar o STATIC_ROOT e comentar o campo EMAIL_BACK_END;
     - Gerar o arquivo requirements.txt;
     
     - Para publicar no heroku é preciso criar um arquivo runtime.txt e adicionar a versão do python nele;
