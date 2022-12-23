@@ -8,7 +8,7 @@ class ContatoForm(forms.Form):
     assunto = forms.CharField(label='Assunto', max_length=100)
     mensagem = forms.CharField(label='Mensagem', widget=forms.Textarea())
 
-    def send_email(self):
+    def send_mail(self):
         nome = self.cleaned_data['nome']
         email = self.cleaned_data['email']
         assunto = self.cleaned_data['assunto']
