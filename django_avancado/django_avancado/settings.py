@@ -123,11 +123,28 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 STATIC_URL = 'static/'
-MEDIA_URL = 'media/'
+MEDIA_URL = '/media/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+# Email de teste console
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+"""
+    E-mail produção
+
+    EMAIL_HOST = 'localhost'
+    EMAIL_HOST_USER = 'no-reply@fusion.com.br'
+    EMAIL_PORT = 587
+    EMAIL_USE_TSL = True
+    EMAIL_HOST_PASSWORD = 'fusion'
+    DEFAULT_FROM_EMAIL = 'contato@fusion.com.br'
+
+"""
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+LOGOUT_REDIRECT_URL = 'index'
