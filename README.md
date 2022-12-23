@@ -29,6 +29,10 @@ Repositório com o objetivo de registrar os conteúdos absorvidos na plataforma 
     - pip install psycopg2-binary - Driver de conexão para o banco de dados;
     - pip install dj-static
     - pip uninstall whitenoise - Comando para remover uma biblioteca instalada;
+    - pip install django-adminlte2:
+        No INSTALLED_APPS adicionar os dois app abaixo:
+            'django_adminlte'
+            'django_adminlte_theme'
 
 # Etapas publicação do projeto
     - Mudar o modo DEBUG para 'False';
@@ -46,3 +50,19 @@ Repositório com o objetivo de registrar os conteúdos absorvidos na plataforma 
         Procfile --> web: gunicorn django_basico.wsgi --log-file -
     - Executar o comando heroku login para fazer a autenticação;
     - Executar o comando heroku create django-basico.jlf --buildpack heroku/python;
+
+# Etapas de inicialização do projeto
+    - Criar um ambiente virtual;
+    - Fazer instalação das bibliotecas a serem utilizadas;
+    - Criar um projeto e caso tenha sido criado o diretório, utilizar o '.' no final do comando;
+    - Criar o app core;
+    - Rodar o comando para gerar o requirements;
+    - Fazer as devidas configurações no arquivo de settings:
+        Diretório STATIC e configurar diretório media para arquivos estaticos;
+        Diretório templates;
+        Configuração do BD;
+        Configuração do idioma e timezone;
+        Instalar os apps;
+    - Configurar URLs com o diretório media;
+    - No arquivo wsgi, configurar o Cling e MediaCling;
+    - Configurar o template de logout;
