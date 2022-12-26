@@ -34,6 +34,19 @@ Repositório com o objetivo de registrar os conteúdos absorvidos na plataforma 
             'django_adminlte'
             'django_adminlte_theme'
 
+    - python manage.py test;
+    - pip install model_mommy;
+    - pip install coverage;
+        Dentro da raiz do projeto criar um arquivo chamado '.coveragerc'
+            Adicionar dentro do arquivo o comando abaixo:
+                [run]
+                source = .
+    - coverage run manage.py test;
+    - coverage report;
+    - coverage html;
+    - rm -rf htmlcov - Comando para remover um diretório;
+    - python -m http.server - Comando para visualizar o coverage;
+
 # Etapas publicação do projeto
     - Mudar o modo DEBUG para 'False';
     - ALLOWED_HOSTS: Configurar o dominio do site neste campo;
