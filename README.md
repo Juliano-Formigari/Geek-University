@@ -45,6 +45,9 @@ Repositório com o objetivo de registrar os conteúdos absorvidos na plataforma 
     - coverage report;
     - coverage html;
     - rm -rf htmlcov - Comando para remover um diretório;
+    - rm db.sqlite3 - Comando para remover um arquivo;
+    - ls - Comando para listar arquivos e diretórios;
+    - rm 00* - Comando para remover todos os arquivos que comecem com 00;
     - python -m http.server - Comando para visualizar o coverage;
     - pip install textblob
 
