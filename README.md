@@ -46,6 +46,7 @@ Repositório com o objetivo de registrar os conteúdos absorvidos na plataforma 
     - coverage html;
     - rm -rf htmlcov - Comando para remover um diretório;
     - python -m http.server - Comando para visualizar o coverage;
+    - pip install textblob
 
 # Etapas publicação do projeto
     - Mudar o modo DEBUG para 'False';
